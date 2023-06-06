@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+    <!-- area untuk memasukkan widget seperti Appbar/Toolbar -->
+    <!-- masukkan Appbar disini -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:theme="@style/AppTheme.Dark">
+
+        <!-- masukkan toolbar disini -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.Dark"
+            app:title="Menu Utama"
+            android:background="@color/primary"
+            app:titleTextColor="@color/accenttext"
+            app:titleCentered="true"
+            android:elevation="45dp"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <!-- area sub activity-->
+    <include layout="@layout/activity_content_menu" />
+
+
+
+    <!-- area untuk memasukkan widget seperti NavigationDrawer,
+     Floating Action Button
+     -->
+</LinearLayout>

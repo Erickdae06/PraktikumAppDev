@@ -1,0 +1,8 @@
+<resources>
+    <!-- hapus property <style> seluruhnya pada strings.xml
+     hanya ada property <string> saja
+     -->
+    <string name="app_name">Praktek Android</string>
+
+
+</resources>
